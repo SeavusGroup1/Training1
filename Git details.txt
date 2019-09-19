@@ -8,4 +8,4 @@ Github.com
 username:SeavusGroup1
 pwd:TrainingGroup1!
 
-https://github.com/SeavusGroup1/Training1
+https://github.com/SeavusGroup1/Training1.git
