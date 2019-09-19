@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Widgets suite">
+    <test name="Smoke">
+        <classes>
+            <class name="testcases.widgets.HTMLContactForm"/>
+            <class name="testcases.widgets.KeyboardEvents"/>
+
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Default Suite -->
