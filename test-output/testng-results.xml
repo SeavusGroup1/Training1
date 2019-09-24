@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="11544" started-at="2019-09-19T09:04:56Z" finished-at="2019-09-19T09:05:08Z">
+  <suite name="Default Suite" duration-ms="10216" started-at="2019-09-23T13:16:04Z" finished-at="2019-09-23T13:16:15Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="11544" started-at="2019-09-19T09:04:56Z" finished-at="2019-09-19T09:05:08Z">
-      <class name="testcases.widgets.SwitchWindows">
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:testcases.widgets.SwitchWindows@3f0ee7cb]" name="startBrowser" is-config="true" duration-ms="7755" started-at="2019-09-19T11:04:56Z" finished-at="2019-09-19T11:05:04Z">
+    <test name="MarkoSelenium" duration-ms="10216" started-at="2019-09-23T13:16:04Z" finished-at="2019-09-23T13:16:15Z">
+      <class name="tests.HTMLTest">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.HTMLTest@35bbe5e8]" name="startBrowser" is-config="true" duration-ms="8405" started-at="2019-09-23T15:16:04Z" finished-at="2019-09-23T15:16:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="SwitchWindows()[pri:0, instance:testcases.widgets.SwitchWindows@3f0ee7cb]" name="SwitchWindows" duration-ms="3778" started-at="2019-09-19T11:05:04Z" finished-at="2019-09-19T11:05:08Z">
+        <test-method status="PASS" signature="htmlTest()[pri:0, instance:tests.HTMLTest@35bbe5e8]" name="htmlTest" duration-ms="1797" started-at="2019-09-23T15:16:13Z" finished-at="2019-09-23T15:16:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SwitchWindows -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:testcases.widgets.SwitchWindows@3f0ee7cb]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2019-09-19T11:05:08Z" finished-at="2019-09-19T11:05:08Z">
+        </test-method> <!-- htmlTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.HTMLTest@35bbe5e8]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2019-09-23T15:16:15Z" finished-at="2019-09-23T15:16:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- testcases.widgets.SwitchWindows -->
-    </test> <!-- Test -->
+      </class> <!-- tests.HTMLTest -->
+    </test> <!-- MarkoSelenium -->
   </suite> <!-- Default Suite -->
 </testng-results>

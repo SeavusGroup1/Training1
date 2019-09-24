@@ -1,21 +1,24 @@
 package testcases.widgets;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.common.BaseClass;
-import pages.widgets.HTMLContactFormPage;
 import pages.common.SideMenuPage;
-
-import java.util.concurrent.TimeUnit;
+import pages.widgets.HTMLContactFormPage;
 
 public class HTMLContactForm extends BaseClass {
 
-        @Test(priority = 0,description = "Input data in form")
-        public void HTMLContactForm() {
+
+    @Test(priority = 0,description = "Input data in form")
+        public void HTMLContactForm (){
+
             HTMLContactFormPage htmlPage = PageFactory.initElements(driver, HTMLContactFormPage.class);
             SideMenuPage sm = PageFactory.initElements(driver,SideMenuPage.class);
+
+            //WebDriverWait wait = new WebDriverWait(driver,10);
+            //wait.until(ExpectedConditions.visibilityOf(sm.getMenuHTMLForm()));
 
             sm.getMenuHTMLForm().click();
             htmlPage.getFirstName().sendKeys(htmlPage.getFname());
@@ -25,8 +28,6 @@ public class HTMLContactForm extends BaseClass {
             System.out.println(driver.getTitle());
 
         }
-
-
 
     }
 

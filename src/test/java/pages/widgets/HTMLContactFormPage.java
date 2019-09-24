@@ -1,9 +1,13 @@
 package pages.widgets;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import pages.common.BaseClass;
 
-public class HTMLContactFormPage {
+
+public class HTMLContactFormPage extends BaseClass {
+
 
     String fname = "Marko";
     String lname="Petrovic";
@@ -12,6 +16,8 @@ public class HTMLContactFormPage {
     @FindBy(xpath = "//input[@class='firstname']") WebElement firstName;
     @FindBy(xpath ="//input[@id='lname']") WebElement lastName;
     @FindBy(xpath = "//input[@type='submit']") WebElement submit;
+
+
 
     public WebElement getLastName(){
         return lastName;

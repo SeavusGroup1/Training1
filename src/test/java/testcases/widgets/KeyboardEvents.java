@@ -1,7 +1,9 @@
 package testcases.widgets;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import pages.common.BaseClass;
 import pages.common.SideMenuPage;
@@ -11,7 +13,8 @@ import java.util.concurrent.TimeUnit;
 
 public class KeyboardEvents extends BaseClass {
 
-        @Test(priority = 0,description = "Upload file")
+
+    @Test(priority = 0,description = "Upload file")
         public void KeyboardEvents(){
             KeyboardEventsPage keyboardPage = PageFactory.initElements(driver,KeyboardEventsPage.class);
             SideMenuPage sm = PageFactory.initElements(driver,SideMenuPage.class);
