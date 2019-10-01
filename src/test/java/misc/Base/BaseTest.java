@@ -16,7 +16,7 @@ public class BaseTest {
 
     @AfterMethod
     public void quitBrowser() {
-       // BrowserFactory.quitBrowser(driver);
+        BrowserFactory.quitBrowser(driver);
     }
 
     public WebDriver getDriver() {

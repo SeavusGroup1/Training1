@@ -10,15 +10,15 @@ public class KeyboardEventsTest extends BaseTest {
 
     @Test
     public void keyboardEventsTest(){
-
+        //insert pages
         SideMenu sm = new SideMenu(getDriver());
         KeyboardEventsPage keyboardPage = new KeyboardEventsPage(getDriver());
         PopupAlert alert = new PopupAlert(getDriver());
-
+        //start test
         sm.getMenuKeyboardEvents();
-        keyboardPage.chooseFileUpload("C:\\Users\\marko.z.petrovic\\IdeaProjects\\TrainingMarko\\Files\\text.txt");
+        keyboardPage.chooseFileUpload();
         keyboardPage.clickToUpload();
-        alert.popup();
+        alert.popup("Thanks, you have selected");
 
 
     }

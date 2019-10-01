@@ -12,17 +12,32 @@ public class HTMLPage extends BasePage {
     public HTMLPage(WebDriver driver) {
         super(driver);
     }
-   /* public String getFname(){
-        ReadExcelConfig excel = new ReadExcelConfig("C:\\Users\\marko.z.petrovic\\IdeaProjects\\MarkoSelenium\\Files\\markoworkbook.xlsx");
-        String fname = excel.getData(0,0,0);
-        return fname;
-    }*/
+
+   /*public String readExcel(int x,int y,int z){
+       String excelFile="C:\\Users\\marko.z.petrovic\\IdeaProjects\\TrainingMarko\\Files\\markoworkbook.xlsx";
+       ReadExcelConfig excel = new ReadExcelConfig(excelFile);
+       String data = excel.getData(x,y,z);
+       return data;
+   }*/
+
+   String excelFile="C:\\Users\\marko.z.petrovic\\IdeaProjects\\TrainingMarko\\Files\\markoworkbook.xlsx";
+   ReadExcelConfig excel = new ReadExcelConfig(excelFile);
+
+
+   public String readExcelName(){
+       String name = excel.getData(0,0,0);
+       return name;
+   }
 
 
     @FindBy(xpath = "//input[@class='firstname']")
     WebElement firstName;
     @FindBy(xpath = "//input[@id='lname']")
     WebElement lastName;
+    @FindBy(xpath = "//input[@name='country']")
+    WebElement country;
+    @FindBy(xpath = "//textarea[@id='subject']")
+    WebElement subject;
     @FindBy(xpath = "//input[@type='submit']")
     WebElement submit;
 
@@ -34,6 +49,14 @@ public class HTMLPage extends BasePage {
         waitForElementToAppear(lastName);
         lastName.sendKeys(lname);
 
+    }
+    public void  countryName(String CountryName){
+        waitForElementToAppear(country);
+        country.sendKeys(CountryName);
+    }
+    public void  subjectText(String SubjectText){
+        waitForElementToAppear(subject);
+        subject.sendKeys(SubjectText);
     }
     public void  clickSubmit(){
         waitForElementToAppear(submit);

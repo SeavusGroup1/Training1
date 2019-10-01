@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
-  <test name="MarkoSelenium">
+  <test name="TrainingMarko">
     <classes>
-      <class name="tests.HTMLTest"/>
+      <class name="tests.SwitchWindowTest">
+        <methods>
+          <include name="switchWindowsTest"/>
+        </methods>
+      </class> <!-- tests.SwitchWindowTest -->
     </classes>
-  </test> <!-- MarkoSelenium -->
+  </test> <!-- TrainingMarko -->
 </suite> <!-- Failed suite [Default Suite] -->

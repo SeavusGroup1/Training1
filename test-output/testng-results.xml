@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Click on Side menu]]>
+    </line>
+    <line>
+      <![CDATA[Click on new window]]>
+    </line>
+    <line>
+      <![CDATA[Switch window]]>
+    </line>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="10216" started-at="2019-09-23T13:16:04Z" finished-at="2019-09-23T13:16:15Z">
+  <suite name="Default Suite" duration-ms="11327" started-at="2019-10-01T09:29:46Z" finished-at="2019-10-01T09:29:57Z">
     <groups>
     </groups>
-    <test name="MarkoSelenium" duration-ms="10216" started-at="2019-09-23T13:16:04Z" finished-at="2019-09-23T13:16:15Z">
-      <class name="tests.HTMLTest">
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.HTMLTest@35bbe5e8]" name="startBrowser" is-config="true" duration-ms="8405" started-at="2019-09-23T15:16:04Z" finished-at="2019-09-23T15:16:13Z">
+    <test name="TrainingMarko" duration-ms="11327" started-at="2019-10-01T09:29:46Z" finished-at="2019-10-01T09:29:57Z">
+      <class name="tests.SwitchWindowTest">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.SwitchWindowTest@3cb5cdba]" name="startBrowser" is-config="true" duration-ms="6656" started-at="2019-10-01T11:29:46Z" finished-at="2019-10-01T11:29:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="htmlTest()[pri:0, instance:tests.HTMLTest@35bbe5e8]" name="htmlTest" duration-ms="1797" started-at="2019-09-23T15:16:13Z" finished-at="2019-09-23T15:16:15Z">
+        <test-method status="PASS" signature="switchWindowsTest()[pri:0, instance:tests.SwitchWindowTest@3cb5cdba]" name="switchWindowsTest" duration-ms="3771" started-at="2019-10-01T11:29:53Z" finished-at="2019-10-01T11:29:56Z">
           <reporter-output>
+            <line>
+              <![CDATA[Click on Side menu]]>
+            </line>
+            <line>
+              <![CDATA[Click on new window]]>
+            </line>
+            <line>
+              <![CDATA[Switch window]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- htmlTest -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.HTMLTest@35bbe5e8]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2019-09-23T15:16:15Z" finished-at="2019-09-23T15:16:15Z">
+        </test-method> <!-- switchWindowsTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.SwitchWindowTest@3cb5cdba]" name="quitBrowser" is-config="true" duration-ms="889" started-at="2019-10-01T11:29:56Z" finished-at="2019-10-01T11:29:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- tests.HTMLTest -->
-    </test> <!-- MarkoSelenium -->
+      </class> <!-- tests.SwitchWindowTest -->
+    </test> <!-- TrainingMarko -->
   </suite> <!-- Default Suite -->
 </testng-results>

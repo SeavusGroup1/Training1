@@ -12,11 +12,12 @@ public class KeyboardEventsPage extends BasePage {
     }
 
 
+
     @FindBy(xpath = "//*[@id=\"browseFile\"]") WebElement chooseFile;
     @FindBy(xpath = "//button[@id='uploadButton']") WebElement clickToUpload;
 
 
-    public void chooseFileUpload(String filePath) {
+    public void chooseFileUpload() {
         waitForElementToBeClickable(chooseFile);
         chooseFile.sendKeys(filePath);
     }
@@ -24,4 +25,8 @@ public class KeyboardEventsPage extends BasePage {
     public void clickToUpload() {
         clickToUpload.click();
     }
+
+    String filePath="C:\\Users\\marko.z.petrovic\\IdeaProjects\\TrainingMarko\\Files\\text.txt";
 }
+
+
