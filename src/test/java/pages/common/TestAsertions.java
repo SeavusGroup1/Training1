@@ -16,5 +16,9 @@ public class TestAsertions extends BasePage {
         public void AssertText(String expectedText,String actualText){
             Assert.assertTrue(expectedText.contains(actualText));
         }
+        public void AssertCurrentTitle(String title){
+        driver.getTitle();
+        Assert.assertTrue(driver.getTitle().contains(title));
+    }
 
     }

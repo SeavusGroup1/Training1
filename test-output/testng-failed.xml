@@ -3,11 +3,8 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
   <test name="TrainingMarko">
     <classes>
-      <class name="tests.SwitchWindowTest">
-        <methods>
-          <include name="switchWindowsTest"/>
-        </methods>
-      </class> <!-- tests.SwitchWindowTest -->
+      <class name="tests.SwitchWindowTest"/>
+      <class name="tests.DoubleClick"/>
     </classes>
   </test> <!-- TrainingMarko -->
 </suite> <!-- Failed suite [Default Suite] -->

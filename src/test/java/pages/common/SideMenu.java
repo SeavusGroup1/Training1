@@ -19,6 +19,7 @@ public class SideMenu extends BasePage {
     @FindBy(xpath = "//a[@href='https://demoqa.com/keyboard-events/']") WebElement menuKeyboardEvents;
     @FindBy(xpath = "//a[@href='https://demoqa.com/automation-practice-switch-windows/']") WebElement menuSwitchWindows;
     @FindBy(xpath = "//a[@href='https://demoqa.com/keyboard-events-sample-form/']") WebElement menuKeyboardForm;
+    @FindBy(xpath = "//a[@href='https://demoqa.com/tooltip-and-double-click/']") WebElement menuDoubleClick;
 
 
 
@@ -36,5 +37,10 @@ public class SideMenu extends BasePage {
     public void getMenuKeyboardForm() {
         menuKeyboardForm.click();
     }
+
+    public void getDoubleClick() {
+        menuDoubleClick.click();
+    }
 }
+
 

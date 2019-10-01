@@ -20,7 +20,7 @@ public class SwitchWindowTest extends BaseTest {
         Reporter.log("Click on Side menu");
         switchWindow.clickNewBrowserWindow();
         Reporter.log("Click on new window");
-        switchWindow.switchingWidnows();
+        switchWindow.switchingWindows();
         Reporter.log("Switch window");
         tstAssert.AssertCurrentURL("https://www.toolsqa.com");
 

@@ -11,10 +11,10 @@ public class PopupAlert extends BasePage {
         super(driver);
     }
 
-    public void popup(String PopupText) {
+    public void popup(String popupText) {
         Alert alertDialog = driver.switchTo().alert();
         String alertText = alertDialog.getText();
-        Assert.assertTrue(alertText.contains(PopupText));
+        Assert.assertTrue(alertText.contains(popupText));
         alertDialog.accept();
         System.out.println(alertText);
 
