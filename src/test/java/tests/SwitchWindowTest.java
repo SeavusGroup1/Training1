@@ -13,9 +13,9 @@ public class SwitchWindowTest extends BaseTest {
         SideMenu sm = new SideMenu(getDriver());
         SwitchWindowsPage switchWindow = new SwitchWindowsPage(getDriver());
 
-        sm.getMenuSwitchWindows().click();
+        sm.getMenuSwitchWindows();
         Reporter.log("Click on Side menu");
-        switchWindow.getNewBrowserWindow().click();
+        switchWindow.clickNewBrowserWindow();
         Reporter.log("Click on new window");
         switchWindow.switchingWidnows();
         Reporter.log("Switch window");

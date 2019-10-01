@@ -12,44 +12,31 @@ public class HTMLPage extends BasePage {
     public HTMLPage(WebDriver driver) {
         super(driver);
     }
-    public String getFname(){
-        ReadExcelConfig excel = new ReadExcelConfig("C:\\Users\\marko.z.petrovic\\IdeaProjects\\MarkoSelenium\\Drivers\\markoworkbook.xlsx");
+   /* public String getFname(){
+        ReadExcelConfig excel = new ReadExcelConfig("C:\\Users\\marko.z.petrovic\\IdeaProjects\\MarkoSelenium\\Files\\markoworkbook.xlsx");
         String fname = excel.getData(0,0,0);
         return fname;
-    }
+    }*/
 
 
-    //String fname = "Marko";
-    String lname="Petrovic";
+    @FindBy(xpath = "//input[@class='firstname']")
+    WebElement firstName;
+    @FindBy(xpath = "//input[@id='lname']")
+    WebElement lastName;
+    @FindBy(xpath = "//input[@type='submit']")
+    WebElement submit;
 
-    @FindBy(xpath = "//input[@class='firstname']") WebElement firstName;
-    @FindBy(xpath ="//input[@id='lname']") WebElement lastName;
-    @FindBy(xpath = "//input[@type='submit']") WebElement submit;
-
-   /* public void userName(){
+    public void userFirstName(String fname) {
         waitForElementToAppear(firstName);
         firstName.sendKeys(fname);
+    }
+    public void  userLastName(String lname){
+        waitForElementToAppear(lastName);
         lastName.sendKeys(lname);
+
+    }
+    public void  clickSubmit(){
+        waitForElementToAppear(submit);
         submit.click();
-    }*/
-
-    public WebElement getLastName(){
-        return lastName;
-    }
-
-    public WebElement getFirstName() {
-        return firstName;
-    }
-
-    public WebElement getSubmit(){
-        return submit;
-    }
-
-   /* public String getFname() {
-        return fname;
-    }*/
-
-    public String getLname() {
-        return lname;
-    }
+}
 }

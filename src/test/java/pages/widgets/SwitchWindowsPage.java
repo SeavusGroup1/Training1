@@ -31,7 +31,7 @@ public class SwitchWindowsPage extends BasePage {
         System.out.println(secondWinHandle);
     }
 
-    public WebElement getNewBrowserWindow() {
-        return newBrowserWindow;
+    public void clickNewBrowserWindow() {
+        newBrowserWindow.click();
     }
 }

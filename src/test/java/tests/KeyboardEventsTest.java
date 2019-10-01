@@ -15,9 +15,9 @@ public class KeyboardEventsTest extends BaseTest {
         KeyboardEventsPage keyboardPage = new KeyboardEventsPage(getDriver());
         PopupAlert alert = new PopupAlert(getDriver());
 
-        sm.getMenuKeyboardEvents().click();
-        keyboardPage.getChooseFile().sendKeys("C:\\\\Users\\\\marko.z.petrovic\\\\Desktop\\\\text.txt");
-        keyboardPage.getClickToUpload().click();
+        sm.getMenuKeyboardEvents();
+        keyboardPage.chooseFileUpload("C:\\Users\\marko.z.petrovic\\IdeaProjects\\TrainingMarko\\Files\\text.txt");
+        keyboardPage.clickToUpload();
         alert.popup();
 
 

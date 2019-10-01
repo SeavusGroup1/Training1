@@ -22,19 +22,19 @@ public class SideMenu extends BasePage {
 
 
 
-    public WebElement getMenuHTMLForm() {
-        return menuHTMLForm;
+    public void getMenuHTMLForm() {
+        menuHTMLForm.click();
 
     }
-    public WebElement getMenuKeyboardEvents() {
-        return menuKeyboardEvents;
+    public void getMenuKeyboardEvents() {
+        menuKeyboardEvents.click();
     }
-    public WebElement getMenuSwitchWindows() {
-        return menuSwitchWindows;
+    public void getMenuSwitchWindows() {
+        menuSwitchWindows.click();
     }
 
-    public WebElement getMenuKeyboardForm() {
-        return menuKeyboardForm;
+    public void getMenuKeyboardForm() {
+        menuKeyboardForm.click();
     }
 }
 

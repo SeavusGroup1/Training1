@@ -15,10 +15,16 @@ public class KeyboardFormPage extends BasePage {
         @FindBy(xpath = "//*[@id=\"permanentAddress\"]") WebElement permanentAdress;
         @FindBy(xpath = "//*[@id=\"submit\"]") WebElement buttonSubmit;
 
-        public void submitForm(String nameSTR,String currentAdressSTR,String permanentAdressSTR){
-            name.sendKeys(nameSTR);
-            currentAdress.sendKeys(currentAdressSTR);
-            permanentAdress.sendKeys(permanentAdressSTR);
+        public void setName(String typeName){
+            name.sendKeys(typeName);
+        }
+        public void setCurrentAdress(String typeCAdress){
+            currentAdress.sendKeys(typeCAdress);
+        }
+        public void setPermanentAdress(String typePAdress){
+            permanentAdress.sendKeys(typePAdress);
+        }
+        public void clickSubmitt(){
             buttonSubmit.click();
         }
 
