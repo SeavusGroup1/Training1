@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
     <line>
       <![CDATA[Click on Side menu]]>
@@ -11,30 +11,58 @@
       <![CDATA[Switch window]]>
     </line>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="26498" started-at="2019-10-01T13:39:27Z" finished-at="2019-10-01T13:39:53Z">
+  <suite name="Failed suite [Default Suite]" duration-ms="95850" started-at="2019-10-02T06:52:46Z" finished-at="2019-10-02T06:54:22Z">
     <groups>
     </groups>
-    <test name="TrainingMarko" duration-ms="26498" started-at="2019-10-01T13:39:27Z" finished-at="2019-10-01T13:39:53Z">
-      <class name="tests.DoubleClick">
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.DoubleClick@2c8d66b2]" name="startBrowser" is-config="true" duration-ms="5095" started-at="2019-10-01T15:39:42Z" finished-at="2019-10-01T15:39:47Z">
+    <test name="TrainingMarko" duration-ms="84724" started-at="2019-10-02T06:52:46Z" finished-at="2019-10-02T06:54:11Z">
+      <class name="tests.interaction.Draggable">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.interaction.Draggable@6bdf28bb]" name="startBrowser" is-config="true" duration-ms="5641" started-at="2019-10-02T08:53:11Z" finished-at="2019-10-02T08:53:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="doubleClick()[pri:0, instance:tests.DoubleClick@2c8d66b2]" name="doubleClick" duration-ms="1233" started-at="2019-10-01T15:39:47Z" finished-at="2019-10-01T15:39:49Z">
+        <test-method status="PASS" signature="draggable()[pri:0, instance:tests.interaction.Draggable@6bdf28bb]" name="draggable" duration-ms="1048" started-at="2019-10-02T08:53:17Z" finished-at="2019-10-02T08:53:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doubleClick -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.DoubleClick@2c8d66b2]" name="quitBrowser" is-config="true" duration-ms="4887" started-at="2019-10-01T15:39:49Z" finished-at="2019-10-01T15:39:53Z">
+        </test-method> <!-- draggable -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.interaction.Draggable@6bdf28bb]" name="quitBrowser" is-config="true" duration-ms="4982" started-at="2019-10-02T08:53:18Z" finished-at="2019-10-02T08:53:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- tests.DoubleClick -->
-      <class name="tests.SwitchWindowTest">
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.SwitchWindowTest@35bbe5e8]" name="startBrowser" is-config="true" duration-ms="6995" started-at="2019-10-01T15:39:27Z" finished-at="2019-10-01T15:39:34Z">
+      </class> <!-- tests.interaction.Draggable -->
+      <class name="tests.interaction.DragAndDrop">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.interaction.DragAndDrop@2d209079]" name="startBrowser" is-config="true" duration-ms="5416" started-at="2019-10-02T08:53:00Z" finished-at="2019-10-02T08:53:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="switchWindowsTest()[pri:0, instance:tests.SwitchWindowTest@35bbe5e8]" name="switchWindowsTest" duration-ms="3223" started-at="2019-10-01T15:39:34Z" finished-at="2019-10-01T15:39:37Z">
+        <test-method status="PASS" signature="dragAndDrop()[pri:0, instance:tests.interaction.DragAndDrop@2d209079]" name="dragAndDrop" duration-ms="1081" started-at="2019-10-02T08:53:05Z" finished-at="2019-10-02T08:53:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDrop -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.interaction.DragAndDrop@2d209079]" name="quitBrowser" is-config="true" duration-ms="4926" started-at="2019-10-02T08:53:06Z" finished-at="2019-10-02T08:53:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.interaction.DragAndDrop -->
+      <class name="tests.widgets.HTMLTest">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.widgets.HTMLTest@6b71769e]" name="startBrowser" is-config="true" duration-ms="6315" started-at="2019-10-02T08:53:23Z" finished-at="2019-10-02T08:53:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="htmlTest()[pri:0, instance:tests.widgets.HTMLTest@6b71769e]" name="htmlTest" duration-ms="2183" started-at="2019-10-02T08:53:29Z" finished-at="2019-10-02T08:53:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- htmlTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.widgets.HTMLTest@6b71769e]" name="quitBrowser" is-config="true" duration-ms="4852" started-at="2019-10-02T08:53:31Z" finished-at="2019-10-02T08:53:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.widgets.HTMLTest -->
+      <class name="tests.widgets.SwitchWindowTest">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.widgets.SwitchWindowTest@1cd072a9]" name="startBrowser" is-config="true" duration-ms="5343" started-at="2019-10-02T08:53:58Z" finished-at="2019-10-02T08:54:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="switchWindowsTest()[pri:0, instance:tests.widgets.SwitchWindowTest@1cd072a9]" name="switchWindowsTest" duration-ms="2692" started-at="2019-10-02T08:54:03Z" finished-at="2019-10-02T08:54:06Z">
           <reporter-output>
             <line>
               <![CDATA[Click on Side menu]]>
@@ -47,11 +75,69 @@
             </line>
           </reporter-output>
         </test-method> <!-- switchWindowsTest -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.SwitchWindowTest@35bbe5e8]" name="quitBrowser" is-config="true" duration-ms="5050" started-at="2019-10-01T15:39:37Z" finished-at="2019-10-01T15:39:42Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.widgets.SwitchWindowTest@1cd072a9]" name="quitBrowser" is-config="true" duration-ms="4911" started-at="2019-10-02T08:54:06Z" finished-at="2019-10-02T08:54:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- tests.SwitchWindowTest -->
+      </class> <!-- tests.widgets.SwitchWindowTest -->
+      <class name="tests.widgets.KeyboardEventsTest">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.widgets.KeyboardEventsTest@2752f6e2]" name="startBrowser" is-config="true" duration-ms="5261" started-at="2019-10-02T08:53:36Z" finished-at="2019-10-02T08:53:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="keyboardEventsTest()[pri:0, instance:tests.widgets.KeyboardEventsTest@2752f6e2]" name="keyboardEventsTest" duration-ms="664" started-at="2019-10-02T08:53:41Z" finished-at="2019-10-02T08:53:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyboardEventsTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.widgets.KeyboardEventsTest@2752f6e2]" name="quitBrowser" is-config="true" duration-ms="4870" started-at="2019-10-02T08:53:42Z" finished-at="2019-10-02T08:53:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.widgets.KeyboardEventsTest -->
+      <class name="tests.widgets.DoubleClick">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.widgets.DoubleClick@2f7c7260]" name="startBrowser" is-config="true" duration-ms="7197" started-at="2019-10-02T08:52:46Z" finished-at="2019-10-02T08:52:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="doubleClick()[pri:0, instance:tests.widgets.DoubleClick@2f7c7260]" name="doubleClick" duration-ms="1162" started-at="2019-10-02T08:52:53Z" finished-at="2019-10-02T08:52:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doubleClick -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.widgets.DoubleClick@2f7c7260]" name="quitBrowser" is-config="true" duration-ms="5055" started-at="2019-10-02T08:52:55Z" finished-at="2019-10-02T08:53:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.widgets.DoubleClick -->
+      <class name="tests.widgets.KeyboardFormTest">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.widgets.KeyboardFormTest@e580929]" name="startBrowser" is-config="true" duration-ms="5286" started-at="2019-10-02T08:53:47Z" finished-at="2019-10-02T08:53:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="keyboardTest()[pri:0, instance:tests.widgets.KeyboardFormTest@e580929]" name="keyboardTest" duration-ms="957" started-at="2019-10-02T08:53:52Z" finished-at="2019-10-02T08:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyboardTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.widgets.KeyboardFormTest@e580929]" name="quitBrowser" is-config="true" duration-ms="4862" started-at="2019-10-02T08:53:53Z" finished-at="2019-10-02T08:53:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.widgets.KeyboardFormTest -->
     </test> <!-- TrainingMarko -->
-  </suite> <!-- Default Suite -->
+    <test name="TrainingMarko(failed)" duration-ms="11084" started-at="2019-10-02T06:54:11Z" finished-at="2019-10-02T06:54:22Z">
+      <class name="tests.widgets.DoubleClick">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.widgets.DoubleClick@511baa65]" name="startBrowser" is-config="true" duration-ms="5258" started-at="2019-10-02T08:54:11Z" finished-at="2019-10-02T08:54:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="doubleClick()[pri:0, instance:tests.widgets.DoubleClick@511baa65]" name="doubleClick" duration-ms="1020" started-at="2019-10-02T08:54:16Z" finished-at="2019-10-02T08:54:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doubleClick -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.widgets.DoubleClick@511baa65]" name="quitBrowser" is-config="true" duration-ms="4805" started-at="2019-10-02T08:54:17Z" finished-at="2019-10-02T08:54:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.widgets.DoubleClick -->
+    </test> <!-- TrainingMarko(failed) -->
+  </suite> <!-- Failed suite [Default Suite] -->
 </testng-results>

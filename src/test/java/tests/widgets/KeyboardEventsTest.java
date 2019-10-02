@@ -1,4 +1,4 @@
-package tests;
+package tests.widgets;
 
 import misc.Base.BaseTest;
 import org.testng.annotations.Test;
