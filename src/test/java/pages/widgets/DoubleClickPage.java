@@ -17,6 +17,7 @@ public class DoubleClickPage extends BasePage {
     @FindBy(xpath = "//*[@id='rightClickBtn']" )WebElement rightClickBtn;
     @FindBy(xpath = "//*[@id='doubleClickBtn']") WebElement doubleClickBtn;
     @FindBy(xpath = "//*[@id='rightclickItem']/div[1]")WebElement editThisBtn;
+    @FindBy(xpath = "//*[@id=\"tooltipDemo\"]")WebElement hoverOverMe;
 
     public void clickDoubleBtn(){
         waitForElementToAppear(doubleClickBtn);
@@ -30,5 +31,9 @@ public class DoubleClickPage extends BasePage {
         waitForElementToAppear(editThisBtn);
         actions.click(editThisBtn).perform();
     }
+    public void hoverField(){
+        actions.moveToElement(hoverOverMe).perform();
+    }
+
 
 }

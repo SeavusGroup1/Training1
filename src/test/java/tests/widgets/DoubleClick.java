@@ -20,6 +20,7 @@ public class DoubleClick extends BaseTest {
         doubleClick.rightClickBtn();
         doubleClick.clickEditThis();
         alert.popup("");
+        doubleClick.hoverField();
 
 
 

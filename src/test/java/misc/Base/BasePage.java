@@ -1,19 +1,17 @@
 package misc.Base;
 
 
-import misc.Excel.ReadExcelConfig;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import javax.swing.*;
 
 public class BasePage {
-    private static final int TIMEOUT = 10;
+    private static final int TIMEOUT = 5;
 
     protected WebDriver driver;
     private WebDriverWait wait;
@@ -30,12 +28,18 @@ public class BasePage {
     }
 
 
-    protected void waitForElementToDisappear(WebElement element) {
-        wait.until(ExpectedConditions.invisibilityOf(element));
+    protected  String waitForElementToDisappear(WebElement element) {
+        String strElement =element.toString();
+        String[]elementSplit=strElement.split("xpath:");
+        String xpathSTR=elementSplit[1];
+        xpathSTR=xpathSTR.substring(0,xpathSTR.length()-1);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpathSTR)));
+        return xpathSTR;
     }
 
     protected void waitForElementToBeClickable (WebElement element){
         wait.until(ExpectedConditions.elementToBeClickable(element));
+
 
     }
 

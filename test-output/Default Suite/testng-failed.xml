@@ -3,60 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
   <test name="TrainingMarko">
     <classes>
-      <class name="tests.widgets.DoubleClick"/>
-      <class name="tests.interaction.DragAndDrop"/>
-      <class name="tests.interaction.Draggable"/>
-      <class name="tests.widgets.HTMLTest"/>
-      <class name="tests.widgets.KeyboardEventsTest"/>
-      <class name="tests.widgets.KeyboardFormTest"/>
-      <class name="tests.widgets.SwitchWindowTest"/>
+      <class name="tests.widgets.ToolTip"/>
     </classes>
   </test> <!-- TrainingMarko -->
-  <test name="TrainingMarko(failed)">
-    <classes>
-      <class name="tests.widgets.HTMLTest">
-        <methods>
-          <include name="quitBrowser"/>
-          <include name="startBrowser"/>
-        </methods>
-      </class> <!-- tests.widgets.HTMLTest -->
-      <class name="tests.widgets.KeyboardEventsTest">
-        <methods>
-          <include name="quitBrowser"/>
-          <include name="startBrowser"/>
-        </methods>
-      </class> <!-- tests.widgets.KeyboardEventsTest -->
-      <class name="tests.interaction.Draggable">
-        <methods>
-          <include name="quitBrowser"/>
-          <include name="startBrowser"/>
-        </methods>
-      </class> <!-- tests.interaction.Draggable -->
-      <class name="tests.interaction.DragAndDrop">
-        <methods>
-          <include name="quitBrowser"/>
-          <include name="startBrowser"/>
-        </methods>
-      </class> <!-- tests.interaction.DragAndDrop -->
-      <class name="tests.widgets.SwitchWindowTest">
-        <methods>
-          <include name="quitBrowser"/>
-          <include name="startBrowser"/>
-        </methods>
-      </class> <!-- tests.widgets.SwitchWindowTest -->
-      <class name="tests.widgets.DoubleClick">
-        <methods>
-          <include name="quitBrowser"/>
-          <include name="startBrowser"/>
-          <include name="doubleClick"/>
-        </methods>
-      </class> <!-- tests.widgets.DoubleClick -->
-      <class name="tests.widgets.KeyboardFormTest">
-        <methods>
-          <include name="quitBrowser"/>
-          <include name="startBrowser"/>
-        </methods>
-      </class> <!-- tests.widgets.KeyboardFormTest -->
-    </classes>
-  </test> <!-- TrainingMarko(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

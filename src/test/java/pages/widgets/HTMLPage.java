@@ -40,6 +40,7 @@ public class HTMLPage extends BasePage {
     WebElement subject;
     @FindBy(xpath = "//input[@type='submit']")
     WebElement submit;
+    @FindBy(partialLinkText ="is here")WebElement googleLinkHere;
 
     public void userFirstName(String fname) {
         waitForElementToAppear(firstName);
@@ -61,5 +62,8 @@ public class HTMLPage extends BasePage {
     public void  clickSubmit(){
         waitForElementToAppear(submit);
         submit.click();
-}
+    }
+    public void linkGoogle(){
+        googleLinkHere.click();
+    }
 }

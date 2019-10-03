@@ -22,12 +22,16 @@ public class SideMenu extends BasePage {
     @FindBy(xpath = "//a[@href='https://demoqa.com/tooltip-and-double-click/']") WebElement menuDoubleClick;
     @FindBy(xpath = "//a[@href='https://demoqa.com/draggable/']") WebElement menuDraggable;
     @FindBy(xpath = "//a[@href='https://demoqa.com/droppable/']") WebElement menuDragAndDrop;
+    @FindBy(xpath = "//a[@href='https://demoqa.com/tooltip/']") WebElement menuToolTip;
 
-    public void setMenuDragAndDrop(){
+    public void getMenuDragAndDrop(){
         menuDragAndDrop.click();
     }
+    public void getMenuToolTip(){
+        menuToolTip.click();
+    }
 
-    public void setMenuDraggable(){
+    public void getMenuDraggable(){
         menuDraggable.click();
     }
     public void getMenuHTMLForm() {
