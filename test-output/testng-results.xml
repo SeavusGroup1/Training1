@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="15448" started-at="2019-10-03T06:52:24Z" finished-at="2019-10-03T06:52:40Z">
+  <suite name="Default Suite" duration-ms="14495" started-at="2019-10-15T11:28:57Z" finished-at="2019-10-15T11:29:11Z">
     <groups>
     </groups>
-    <test name="TrainingMarko" duration-ms="15448" started-at="2019-10-03T06:52:24Z" finished-at="2019-10-03T06:52:40Z">
-      <class name="tests.widgets.ToolTip">
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.widgets.ToolTip@7dc36524]" name="startBrowser" is-config="true" duration-ms="8836" started-at="2019-10-03T08:52:24Z" finished-at="2019-10-03T08:52:33Z">
+    <test name="TrainingMarko" duration-ms="14495" started-at="2019-10-15T11:28:57Z" finished-at="2019-10-15T11:29:11Z">
+      <class name="tests.widgets.KeyboardEventsTest">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.widgets.KeyboardEventsTest@7dc36524]" name="startBrowser" is-config="true" duration-ms="8173" started-at="2019-10-15T13:28:57Z" finished-at="2019-10-15T13:29:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="hoverElement()[pri:0, instance:tests.widgets.ToolTip@7dc36524]" name="hoverElement" duration-ms="1712" started-at="2019-10-03T08:52:33Z" finished-at="2019-10-03T08:52:35Z">
+        <test-method status="PASS" signature="keyboardEventsTest()[pri:0, instance:tests.widgets.KeyboardEventsTest@7dc36524]" name="keyboardEventsTest" duration-ms="1405" started-at="2019-10-15T13:29:05Z" finished-at="2019-10-15T13:29:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- hoverElement -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.widgets.ToolTip@7dc36524]" name="quitBrowser" is-config="true" duration-ms="4884" started-at="2019-10-03T08:52:35Z" finished-at="2019-10-03T08:52:40Z">
+        </test-method> <!-- keyboardEventsTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.widgets.KeyboardEventsTest@7dc36524]" name="quitBrowser" is-config="true" duration-ms="4907" started-at="2019-10-15T13:29:07Z" finished-at="2019-10-15T13:29:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- tests.widgets.ToolTip -->
+      </class> <!-- tests.widgets.KeyboardEventsTest -->
     </test> <!-- TrainingMarko -->
   </suite> <!-- Default Suite -->
 </testng-results>

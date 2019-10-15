@@ -1,13 +1,10 @@
 package pages.common;
 
-import com.sun.org.apache.xpath.internal.functions.FuncSubstring;
+
 import misc.Base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
-import java.nio.channels.ByteChannel;
 
 
 public class SideMenu extends BasePage {
@@ -15,42 +12,47 @@ public class SideMenu extends BasePage {
         super(driver);
     }
 
-    @FindBy(xpath = "//a[@href='https://demoqa.com/html-contact-form/']") WebElement menuHTMLForm;
-    @FindBy(xpath = "//a[@href='https://demoqa.com/keyboard-events/']") WebElement menuKeyboardEvents;
-    @FindBy(xpath = "//a[@href='https://demoqa.com/automation-practice-switch-windows/']") WebElement menuSwitchWindows;
-    @FindBy(xpath = "//a[@href='https://demoqa.com/keyboard-events-sample-form/']") WebElement menuKeyboardForm;
-    @FindBy(xpath = "//a[@href='https://demoqa.com/tooltip-and-double-click/']") WebElement menuDoubleClick;
-    @FindBy(xpath = "//a[@href='https://demoqa.com/draggable/']") WebElement menuDraggable;
-    @FindBy(xpath = "//a[@href='https://demoqa.com/droppable/']") WebElement menuDragAndDrop;
-    @FindBy(xpath = "//a[@href='https://demoqa.com/tooltip/']") WebElement menuToolTip;
+    By menuHTMLForm=By.xpath("//a[@href='https://demoqa.com/html-contact-form/']");
+    By menuKeyboardEvents=By.xpath("//a[@href='https://demoqa.com/keyboard-events/']");
+    By menuSwitchWindows=By.xpath("//a[@href='https://demoqa.com/automation-practice-switch-windows/']");
+    By menuKeyboardForm=By.xpath("//a[@href='https://demoqa.com/keyboard-events-sample-form/']");
+    By menuDoubleClick=By.xpath("//a[@href='https://demoqa.com/tooltip-and-double-click/']");
+    By menuDraggable=By.xpath("//a[@href='https://demoqa.com/draggable/']");
+    By menuDragAndDrop=By.xpath("//a[@href='https://demoqa.com/droppable/']");
+    By menuToolTip=By.xpath("//a[@href='https://demoqa.com/tooltip/']");
+    By menuDatePicker=By.xpath("//a[@href='https://demoqa.com/datepicker/']");
+
+    public void getMenuDatePicker(){
+        click(menuDatePicker);
+    }
 
     public void getMenuDragAndDrop(){
-        menuDragAndDrop.click();
+        click(menuDragAndDrop);
     }
     public void getMenuToolTip(){
-        menuToolTip.click();
+        click(menuToolTip);
     }
 
     public void getMenuDraggable(){
-        menuDraggable.click();
+        click(menuDraggable);
     }
     public void getMenuHTMLForm() {
-        menuHTMLForm.click();
+        click(menuHTMLForm);
 
     }
     public void getMenuKeyboardEvents() {
-        menuKeyboardEvents.click();
+        click(menuKeyboardEvents);
     }
     public void getMenuSwitchWindows() {
-        menuSwitchWindows.click();
+        click(menuSwitchWindows);
     }
 
     public void getMenuKeyboardForm() {
-        menuKeyboardForm.click();
+        click(menuKeyboardForm);
     }
 
     public void getDoubleClick() {
-        menuDoubleClick.click();
+        click(menuDoubleClick);
     }
 }
 

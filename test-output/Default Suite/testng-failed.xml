@@ -3,7 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
   <test name="TrainingMarko">
     <classes>
-      <class name="tests.widgets.ToolTip"/>
+      <class name="tests.widgets.KeyboardEventsTest"/>
     </classes>
   </test> <!-- TrainingMarko -->
 </suite> <!-- Failed suite [Default Suite] -->

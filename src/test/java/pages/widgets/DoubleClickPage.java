@@ -1,38 +1,33 @@
 package pages.widgets;
 
 import misc.Base.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
 
 
 public class DoubleClickPage extends BasePage {
     public DoubleClickPage(WebDriver driver) {
         super(driver);
     }
-    Actions actions=new Actions(driver);
 
-
-    @FindBy(xpath = "//*[@id='rightClickBtn']" )WebElement rightClickBtn;
-    @FindBy(xpath = "//*[@id='doubleClickBtn']") WebElement doubleClickBtn;
-    @FindBy(xpath = "//*[@id='rightclickItem']/div[1]")WebElement editThisBtn;
-    @FindBy(xpath = "//*[@id=\"tooltipDemo\"]")WebElement hoverOverMe;
+    By rightClickBtn=By.xpath("//*[@id='rightClickBtn']");
+    By doubleClickBtn=By.xpath("//*[@id='doubleClickBtn']");
+    By editThisBtn=By.xpath("//*[@id='rightclickItem']/div[1]");
+    By hoverOverMe=By.xpath("//*[@id=\"tooltipDemo\"]");
 
     public void clickDoubleBtn(){
-        waitForElementToAppear(doubleClickBtn);
-        actions.doubleClick(doubleClickBtn).perform();
+        doubleClick(doubleClickBtn);
     }
     public void rightClickBtn(){
-        waitForElementToAppear(rightClickBtn);
-        actions.contextClick(rightClickBtn).perform();
+
+        rightClick(rightClickBtn);
     }
     public void clickEditThis(){
-        waitForElementToAppear(editThisBtn);
-        actions.click(editThisBtn).perform();
+
+        click(editThisBtn);
     }
     public void hoverField(){
-        actions.moveToElement(hoverOverMe).perform();
+        hoverElement(hoverOverMe);
     }
 
 

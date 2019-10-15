@@ -16,8 +16,8 @@ public class SwitchWindowsPage extends BasePage {
         super(driver);
     }
 
-    @FindBy(xpath = "//button[@id='button1']") WebElement newBrowserWindow;
-    @FindBy(xpath = "//button[@onclick='newMsgWin()']") WebElement newMessageWindow;
+    By newBrowserWindow = By.xpath("//button[@id='button1']");
+    By newMessageWindow = By.xpath("//button[@onclick='newMsgWin()']");
 
 
     public void switchingWindows(){
@@ -36,10 +36,10 @@ public class SwitchWindowsPage extends BasePage {
 
 
     public void clickNewBrowserWindow() {
-        newBrowserWindow.click();
+        click(newBrowserWindow);
     }
     public void clickNewMessageWindow(){
-        newMessageWindow.click();
+        click(newMessageWindow);
     }
 
 

@@ -13,14 +13,12 @@ public class ToolTipPage extends BasePage {
     }
     Actions actions=new Actions(driver);
 
-    @FindBy(xpath ="//*[@id=\"age\"]")WebElement yourAge;
-    @FindBy(xpath = "//*[contains(@id,'ui-id')]")WebElement hoverText;
+    By yourAge = By.xpath("//*[@id=\"age\"]");
+    By hoverText = By.xpath("//*[contains(@id,'ui-id')]");
 
     public void hoverYourAge() throws InterruptedException {
-        actions.moveToElement(yourAge).perform();
-        waitForElementToAppear(hoverText);
+        actions.moveToElement(driver.findElement(yourAge)).perform();
         actions.moveByOffset(10,40).perform();
-        waitForElementToDisappear(hoverText);
 
     }
 }

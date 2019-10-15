@@ -1,6 +1,7 @@
 package pages.widgets;
 
 import misc.Base.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,22 +12,21 @@ public class KeyboardEventsPage extends BasePage {
         super(driver);
     }
 
+    String filePath = System.getProperty("user.dir")+"\\Files\\text.txt";
 
-
-    @FindBy(xpath = "//*[@id=\"browseFile\"]") WebElement chooseFile;
-    @FindBy(xpath = "//button[@id='uploadButton']") WebElement clickToUpload;
+    By chooseFile=By.xpath("//*[@id=\"browseFile\"]");
+    By clickToUpload=By.xpath("//button[@id='uploadButton']");
 
 
     public void chooseFileUpload() {
-        waitForElementToBeClickable(chooseFile);
-        chooseFile.sendKeys(filePath);
+        writeText(chooseFile,filePath);
     }
 
     public void clickToUpload() {
-        clickToUpload.click();
+        click(clickToUpload);
     }
 
-    String filePath="C:\\Users\\marko.z.petrovic\\IdeaProjects\\TrainingMarko\\Files\\text.txt";
+
 }
 
 

@@ -1,10 +1,9 @@
 package pages.interaction;
 
 import misc.Base.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
 
 public class DropPage extends BasePage {
     public DropPage(WebDriver driver) {
@@ -12,14 +11,15 @@ public class DropPage extends BasePage {
     }
     Actions actions = new Actions(driver);
 
-    @FindBy(xpath = "//*[@id=\"draggable\"]")WebElement dragMeToTarget;
-    @FindBy(xpath = "//*[@id=\"droppable\"]")WebElement dropHere;
+    By elementToDrag=By.xpath("//*[@id=\"draggable\"]");
+    By dropSpace=By.xpath("//*[@id=\"droppable\"]");
 
     public void dragAndDrop(){
-        actions.dragAndDrop(dragMeToTarget,dropHere).perform();
+        dragAndDrop(elementToDrag,dropSpace);
     }
 
-    public WebElement getDropHereText() {
-        return dropHere;
+    public String getDropHereText() {
+        readText(dropSpace);
+        return readText(dropSpace);
     }
 }
