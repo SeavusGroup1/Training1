@@ -48,8 +48,5 @@ public class BaseTest {
         BrowserFactory.quitBrowser(driver);
     }
 
-    public WebDriver getDriver() {
-        return driver;
-    }
 
 }

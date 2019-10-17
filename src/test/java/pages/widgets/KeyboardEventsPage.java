@@ -12,7 +12,7 @@ public class KeyboardEventsPage extends BasePage {
         super(driver);
     }
 
-    String filePath = System.getProperty("user.dir")+"\\Files\\text.txt";
+    String filePath = System.getProperty("user.dir")+"\\src\\test\\resources\\text.txt";
 
     By chooseFile=By.xpath("//*[@id=\"browseFile\"]");
     By clickToUpload=By.xpath("//button[@id='uploadButton']");

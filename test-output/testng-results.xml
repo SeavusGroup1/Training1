@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Click on Side menu]]>
+    </line>
+    <line>
+      <![CDATA[Click on new window]]>
+    </line>
+    <line>
+      <![CDATA[Switch window]]>
+    </line>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="14495" started-at="2019-10-15T11:28:57Z" finished-at="2019-10-15T11:29:11Z">
+  <suite name="Default Suite" duration-ms="17393" started-at="2019-10-16T11:01:45Z" finished-at="2019-10-16T11:02:02Z">
     <groups>
     </groups>
-    <test name="TrainingMarko" duration-ms="14495" started-at="2019-10-15T11:28:57Z" finished-at="2019-10-15T11:29:11Z">
-      <class name="tests.widgets.KeyboardEventsTest">
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.widgets.KeyboardEventsTest@7dc36524]" name="startBrowser" is-config="true" duration-ms="8173" started-at="2019-10-15T13:28:57Z" finished-at="2019-10-15T13:29:05Z">
+    <test name="TrainingMarko" duration-ms="17393" started-at="2019-10-16T11:01:45Z" finished-at="2019-10-16T11:02:02Z">
+      <class name="tests.widgets.SwitchWindowTest">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.widgets.SwitchWindowTest@6debcae2]" name="startBrowser" is-config="true" duration-ms="8404" started-at="2019-10-16T13:01:45Z" finished-at="2019-10-16T13:01:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="keyboardEventsTest()[pri:0, instance:tests.widgets.KeyboardEventsTest@7dc36524]" name="keyboardEventsTest" duration-ms="1405" started-at="2019-10-15T13:29:05Z" finished-at="2019-10-15T13:29:07Z">
+        <test-method status="PASS" signature="switchWindowsTest()[pri:0, instance:tests.widgets.SwitchWindowTest@6debcae2]" name="switchWindowsTest" duration-ms="4037" started-at="2019-10-16T13:01:53Z" finished-at="2019-10-16T13:01:57Z">
           <reporter-output>
+            <line>
+              <![CDATA[Click on Side menu]]>
+            </line>
+            <line>
+              <![CDATA[Click on new window]]>
+            </line>
+            <line>
+              <![CDATA[Switch window]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- keyboardEventsTest -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.widgets.KeyboardEventsTest@7dc36524]" name="quitBrowser" is-config="true" duration-ms="4907" started-at="2019-10-15T13:29:07Z" finished-at="2019-10-15T13:29:11Z">
+        </test-method> <!-- switchWindowsTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.widgets.SwitchWindowTest@6debcae2]" name="quitBrowser" is-config="true" duration-ms="4941" started-at="2019-10-16T13:01:57Z" finished-at="2019-10-16T13:02:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- tests.widgets.KeyboardEventsTest -->
+      </class> <!-- tests.widgets.SwitchWindowTest -->
     </test> <!-- TrainingMarko -->
   </suite> <!-- Default Suite -->
 </testng-results>

@@ -9,7 +9,7 @@ public class DropPage extends BasePage {
     public DropPage(WebDriver driver) {
         super(driver);
     }
-    Actions actions = new Actions(driver);
+
 
     By elementToDrag=By.xpath("//*[@id=\"draggable\"]");
     By dropSpace=By.xpath("//*[@id=\"droppable\"]");

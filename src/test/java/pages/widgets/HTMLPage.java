@@ -20,7 +20,7 @@ public class HTMLPage extends BasePage {
        String data = excel.getData(x,y,z);
        return data;
    }*/
-   String excelFile = System.getProperty("user.dir")+"\\Files\\markoworkbook.xlsx";
+   String excelFile = System.getProperty("user.dir")+"\\src\\test\\resources\\markoworkbook.xlsx";
    ReadExcelConfig excel = new ReadExcelConfig(excelFile);
 
 
