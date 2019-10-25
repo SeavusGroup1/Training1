@@ -2,14 +2,15 @@ package pages.common;
 
 
 import misc.Base.BasePage;
+import misc.BrowserFactory.Browser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 
 
 public class SideMenu extends BasePage {
-    public SideMenu(WebDriver driver) {
-        super(driver);
+    public SideMenu(Browser browser) {
+        super(browser);
     }
 
     By menuHTMLForm=By.xpath("//a[@href='https://demoqa.com/html-contact-form/']");

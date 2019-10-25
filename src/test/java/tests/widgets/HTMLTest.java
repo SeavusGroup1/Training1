@@ -16,7 +16,7 @@ public class HTMLTest extends BaseTest {
         htmlPage.countryName("Serbia");
         htmlPage.subjectText("Hello Serbia!");
         htmlPage.clickSubmit();
-        testAsertions.AssertCurrentURL("https://demoqa.com/html-contact-form/onsubmitform");
+        htmlPage.AssertCurrentURL("https://demoqa.com/html-contact-form/onsubmitform");
     }
 
     @Test(priority = 0)
@@ -24,7 +24,7 @@ public class HTMLTest extends BaseTest {
 
         sideMenu.getMenuHTMLForm();
         htmlPage.linkGoogle();
-        testAsertions.AssertCurrentURL("google");
+        htmlPage.AssertCurrentURL("google");
 
 
     }

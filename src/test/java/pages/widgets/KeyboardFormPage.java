@@ -1,14 +1,14 @@
 package pages.widgets;
 
 import misc.Base.BasePage;
+import misc.BrowserFactory.Browser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 public class KeyboardFormPage extends BasePage {
 
-    public KeyboardFormPage(WebDriver driver) {super(driver);}
+    public KeyboardFormPage(Browser browser) {
+        super(browser);}
 
         By name = By.xpath("//*[@id=\"userName\"]");
         By currentAdress = By.xpath("//*[@id=\"currentAddress\"]");

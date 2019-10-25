@@ -1,15 +1,14 @@
 package pages.widgets;
 
 import misc.Base.BasePage;
+import misc.BrowserFactory.Browser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 public class KeyboardEventsPage extends BasePage {
 
-    public KeyboardEventsPage(WebDriver driver) {
-        super(driver);
+    public KeyboardEventsPage(Browser browser) {
+        super(browser);
     }
 
     String filePath = System.getProperty("user.dir")+"\\src\\test\\resources\\text.txt";

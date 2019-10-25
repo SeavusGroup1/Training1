@@ -11,7 +11,7 @@ public class DragAndDrop extends BaseTest {
 
         sideMenu.getMenuDragAndDrop();
         dropPage.dragAndDrop();
-        testAsertions.AssertText(dropPage.getDropHereText(),"Dropped");
+        dropPage.AssertText(dropPage.getDropHereText(),"Dropped");
 
 
     }

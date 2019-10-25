@@ -1,19 +1,16 @@
 package pages.widgets;
 
-import com.sun.xml.internal.bind.v2.model.core.ID;
 import misc.Base.BasePage;
+import misc.BrowserFactory.Browser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
 
 import java.util.Set;
 
 public class SwitchWindowsPage extends BasePage {
 
-    public SwitchWindowsPage(WebDriver driver) {
-        super(driver);
+    public SwitchWindowsPage(Browser browser) {
+        super(browser);
     }
 
     By newBrowserWindow = By.xpath("//button[@id='button1']");
@@ -21,15 +18,15 @@ public class SwitchWindowsPage extends BasePage {
 
 
     public void switchingWindows(){
-        Set handles = driver.getWindowHandles();
-        String firstWinHandle = driver.getWindowHandle();
+        Set handles = browser.getDriver().getWindowHandles();
+        String firstWinHandle = browser.getDriver().getWindowHandle();
         handles.remove(firstWinHandle);
         String winHandle = (String) handles.iterator().next();
         String secondWinHandle = winHandle;
         System.out.println(firstWinHandle);
 
         if (winHandle != firstWinHandle) {
-            driver.switchTo().window(secondWinHandle);
+            browser.getDriver().switchTo().window(secondWinHandle);
         }
         System.out.println(secondWinHandle);
     }

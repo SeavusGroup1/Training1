@@ -1,13 +1,14 @@
 package pages.widgets;
 
 import misc.Base.BasePage;
+import misc.BrowserFactory.Browser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 
 public class DoubleClickPage extends BasePage {
-    public DoubleClickPage(WebDriver driver) {
-        super(driver);
+    public DoubleClickPage(Browser browser) {
+        super(browser);
     }
 
     By rightClickBtn=By.xpath("//*[@id='rightClickBtn']");

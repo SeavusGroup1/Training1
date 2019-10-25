@@ -1,13 +1,13 @@
 package pages.interaction;
 
 import misc.Base.BasePage;
+import misc.BrowserFactory.Browser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 
 public class DropPage extends BasePage {
-    public DropPage(WebDriver driver) {
-        super(driver);
+    public DropPage(Browser browser) {
+        super(browser);
     }
 
 

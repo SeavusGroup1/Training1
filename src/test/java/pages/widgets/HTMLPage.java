@@ -1,17 +1,16 @@
 package pages.widgets;
 
 import misc.Base.BasePage;
+import misc.BrowserFactory.Browser;
 import misc.Excel.ReadExcelConfig;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 
 public class HTMLPage extends BasePage {
 
-    public HTMLPage(WebDriver driver) {
-        super(driver);
+    public HTMLPage(Browser browser) {
+        super(browser);
     }
 
    /*public String readExcel(int x,int y,int z){

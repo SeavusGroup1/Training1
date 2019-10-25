@@ -16,7 +16,7 @@ public class SwitchWindowTest extends BaseTest {
         Reporter.log("Click on new window");
         switchWindowsPage.switchingWindows();
         Reporter.log("Switch window");
-        testAsertions.AssertCurrentURL("https://www.toolsqa.com");
+        switchWindowsPage.AssertCurrentURL("https://www.toolsqa.com");
 
     }
 

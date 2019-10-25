@@ -1,51 +1,47 @@
 package misc.Base;
 
-import misc.BrowserFactory.BrowserFactory;
-import org.openqa.selenium.WebDriver;
+import misc.BrowserFactory.Browser;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pages.common.PopupAlert;
 import pages.common.SideMenu;
-import pages.common.TestAsertions;
 import pages.interaction.DropPage;
 import pages.widgets.*;
 
 public class BaseTest {
 
-    public WebDriver driver;
-    public HTMLPage htmlPage;
-    public PopupAlert popupAlert;
-    public SideMenu sideMenu;
-    public TestAsertions testAsertions;
-    public DropPage dropPage;
-    public DatePickerPage datePickerPage;
-    public DoubleClickPage doubleClickPage;
-    public KeyboardEventsPage keyboardEventsPage;
-    public KeyboardFormPage keyboardFormPage;
-    public SwitchWindowsPage switchWindowsPage;
-    public ToolTipPage toolTipPage;
+    protected HTMLPage htmlPage;
+    protected PopupAlert popupAlert;
+    protected SideMenu sideMenu;
+    protected DropPage dropPage;
+    protected DatePickerPage datePickerPage;
+    protected DoubleClickPage doubleClickPage;
+    protected KeyboardEventsPage keyboardEventsPage;
+    protected KeyboardFormPage keyboardFormPage;
+    protected SwitchWindowsPage switchWindowsPage;
+    protected ToolTipPage toolTipPage;
+    public Browser browser;
 
     @BeforeMethod
     public void startBrowser() {
-        driver = BrowserFactory.startBrowser(driver, "chrome");
-        htmlPage = new HTMLPage(driver);
-        popupAlert = new PopupAlert(driver);
-        sideMenu = new SideMenu(driver);
-        testAsertions=new TestAsertions(driver);
-        dropPage=new DropPage(driver);
-        datePickerPage=new DatePickerPage(driver);
-        doubleClickPage=new DoubleClickPage(driver);
-        keyboardEventsPage=new KeyboardEventsPage(driver);
-        keyboardFormPage=new KeyboardFormPage(driver);
-        switchWindowsPage=new SwitchWindowsPage(driver);
-        toolTipPage=new ToolTipPage(driver);
+        browser = new Browser();
+        htmlPage = new HTMLPage(browser);
+        popupAlert = new PopupAlert(browser);
+        sideMenu = new SideMenu(browser);
+        dropPage=new DropPage(browser);
+        datePickerPage=new DatePickerPage(browser);
+        doubleClickPage=new DoubleClickPage(browser);
+        keyboardEventsPage=new KeyboardEventsPage(browser);
+        keyboardFormPage=new KeyboardFormPage(browser);
+        switchWindowsPage=new SwitchWindowsPage(browser);
+        toolTipPage=new ToolTipPage(browser);
 
     }
 
     @AfterMethod
     public void quitBrowser() throws InterruptedException {
         Thread.sleep(4000);
-        BrowserFactory.quitBrowser(driver);
+        browser.quitBrowser();
     }
 
 
